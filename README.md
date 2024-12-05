@@ -29,4 +29,5 @@ The Bookstore Application is a web-based platform for managing a collection of b
 - backend integration
 - enhanced UI/UX
 - performance optimization
-- more accessibility features like labeling, keyboard-accessible components, focus management, ARIA roles and attributes, and the right semantic HTML where applied...
+- more accessibility features like labeling, keyboard-accessible components, focus management, ARIA roles and attributes, and the right semantic HTML where applied...  
+

@@ -1,6 +1,7 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import { Provider } from "react-redux";
+import { MemoryRouter } from "react-router-dom"; // Import MemoryRouter
 import configureStore from "redux-mock-store";
 import { BookCard } from "../components/BookCard";
 
@@ -23,9 +24,11 @@ describe("BookCard", () => {
     };
 
     render(
-      <Provider store={store}>
-        <BookCard book={book} />
-      </Provider>
+      <MemoryRouter>
+        <Provider store={store}>
+          <BookCard book={book} />
+        </Provider>
+      </MemoryRouter>
     );
 
     // Ensure the button is correctly located
