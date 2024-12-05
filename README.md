@@ -1,50 +1,31 @@
-# React + TypeScript + Vite
+# Book Store Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Bookstore Application is a web-based platform for managing a collection of books. It allows users to view a list of books, search and filter them, manage their shopping cart, and update their user profile. The application demonstrates modern React development practices, including state management with Redux Toolkit, component styling with TailwindCSS, and advanced features like testing with Jest and responsive design.
 
-Currently, two official plugins are available:
+### React, Typescript, Redux Toolkit, TailwindCSS, Shadcn/ui JEST, Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Navbar with links to Books and Profile pages.
+- Sidebar is always visible, showing the shopping cart.
+- Books Page displays a searchable and filtrable list of books and allows users to add books to the cart
+- Shopping Cart tracks items with quantities and total price and it provides a checkout button with no action yet implemented.
+- User Profile allows updating user info. It is dynamically generated an avatar based on initials.
 
-## Expanding the ESLint configuration
+## Features that may come
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Persistent state
+2. Theme mode
+3. Unit/Integration tests
+4. Better error handling
+5. Advanced Features
 
-- Configure the top-level `parserOptions` property like this:
+### Trade-offs
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- limited API integration
+- minimal styling using TailwindCSS and Shadcn/ui
+- testing coverage
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Future improvements
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+- backend integration
+- enhanced UI/UX
+- performance optimization
